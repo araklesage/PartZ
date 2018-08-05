@@ -19,7 +19,9 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Pz\CoreBundle\PzCoreBundle(),
+            new PZ\CoreBundle\PZCoreBundle(),
+            new PZ\UserBundle\PZUserBundle(),
+            new PZ\EventBundle\PZEventBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

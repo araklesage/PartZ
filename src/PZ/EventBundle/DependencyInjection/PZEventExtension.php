@@ -1,6 +1,6 @@
 <?php
 
-namespace Pz\CoreBundle\DependencyInjection;
+namespace PZ\EventBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class PzCoreExtension extends Extension
+class PZEventExtension extends Extension
 {
     /**
      * {@inheritdoc}

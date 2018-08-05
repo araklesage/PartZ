@@ -1,9 +1,9 @@
 <?php
 
-namespace Pz\CoreBundle;
+namespace PZ\CoreBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class PzCoreBundle extends Bundle
+class PZCoreBundle extends Bundle
 {
 }

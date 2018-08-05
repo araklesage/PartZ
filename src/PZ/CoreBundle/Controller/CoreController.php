@@ -1,6 +1,6 @@
 <?php
 
-namespace Pz\CoreBundle\Controller;
+namespace PZ\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;

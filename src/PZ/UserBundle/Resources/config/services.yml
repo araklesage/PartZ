@@ -1,0 +1,4 @@
+services:
+#    pz_user.example:
+#        class: PZ\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
