@@ -4,6 +4,7 @@ namespace PZ\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use FOS\UserBundle\Model\Group as Basegroup;
 
 
 /**
@@ -12,7 +13,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * @ORM\Table(name="more")
  * @ORM\Entity(repositoryClass="PZ\UserBundle\Repository\MoreRepository")
  */
-class Group
+class Group extends Basegroup
 {
     /**
      * @var int
