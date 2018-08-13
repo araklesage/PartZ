@@ -58,12 +58,12 @@ class Event
     private $published;
 
     /**
-     * @ORM\OneToOne(targetEntity="src\Entity\Image", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="PZ\EventBundle\Entity\Image", cascade={"persist"})
      */
     private $image;
 
     /**
-     * @ORM\ManyToMany(targetEntity="src\Entity\Category", cascade={"persist"})
+     * @ORM\ManyToMany(targetEntity="PZ\EventBundle\Entity\Category", cascade={"persist"})
      * @ORM\JoinTable(name="pz_category")
      */
     private $categories;

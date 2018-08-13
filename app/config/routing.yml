@@ -1,15 +1,16 @@
-pz_event:
-    resource: "@PZEventBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-pz_user:
-    resource: "@PZUserBundle/Controller/"
-    type:     annotation
-    prefix:   /
 
 pz_core:
     resource: "@PZCoreBundle/Controller/"
     type:     annotation
     prefix:   /
 
+pz_event:
+    resource: "@PZEventBundle/Controller/"
+    type:     annotation
+    prefix:   /event
+
+
+pz_user:
+    resource: "@PZUserBundle/Controller/"
+    type:     annotation
+    prefix:   /user

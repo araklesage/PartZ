@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+
+    <section class="header1 cid-r0BRwfdqp9 mbr-parallax-background" id="header1-j" style="background-image: url('{{ asset("bundles/pzcore/img/event.jpg") }}')">
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="mbr-white col-md-10" style="top: -30px;">
+                    <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1" style="font-size: 4rem">
+                        Les Events&nbsp;</h1>
+                    <h3 class="mbr-section-subtitle align-center mbr-light pb-3 mbr-fonts-style display-2" style="font-size: 3rem">
+                        Les événements à venir</h3>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+{% for event in events %}
+    <section class="mbr-section info2 cid-r0kILaxYRD mbr-parallax-background" id="info2-b" href="{{ path('viewEvent', { 'id' : event.id }) }}">
+        <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(37, 170, 178);">
+        </div>
+
+        <div class="container">
+            <div class="row main justify-content-center">
+                <div class="media-container-column col-12 col-lg-3 col-md-4">
+
+                </div>
+                <div class="media-container-column title col-12 col-lg-7 col-md-6">
+                    <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
+                        {{ event.title }}</h2>
+                    <h3 class="mbr-section-subtitle align-right mbr-light mbr-white mbr-fonts-style display-5">
+                        le {{ event.date|date('d/m/Y') }}&nbsp;</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% else %}
+        Pas (encore !) d'article
+    {% endfor %}
+
+    {% endblock %}
+
